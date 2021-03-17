@@ -2,7 +2,7 @@ const textInput = document.getElementById("textInput");
 const textOutput = document.getElementById("textOutput");
 
 textInput.addEventListener("keyup", (e) => {
-  const input = e.target.value;
+  const input = e.target.value.toLowerCase();
   const output = input
     .split(" ")
     .map((word) => 
@@ -18,9 +18,12 @@ textInput.addEventListener("keyup", (e) => {
             case "three":
                 word = "drei";
                 break;
+            case "hello":
+                word = "hallo";
+                break;
         }
         return (word);
     })
     .join(" ");
-     textOutput.innerText = output;
+     textOutput.value = output;
 });
