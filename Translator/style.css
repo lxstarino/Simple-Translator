@@ -39,7 +39,6 @@ body{
 
 .user-input{
     background-color: #141414;
-    text-transform: lowercase;
     color: white;
     outline: none;
     border: none;
@@ -53,7 +52,6 @@ body{
 
 .user-input::placeholder{
     color: #666666;
-    text-transform:none;
 }
 
 @media screen and (max-width: 1080px){
